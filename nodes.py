@@ -16,6 +16,7 @@ class SaveImagePlus:
     RETURN_TYPES = ()
     FUNCTION = "save"
     CATEGORY = "Jiffies"
+    OUTPUT_NODE = True
 
     def save(self, image, folder='/tmp/comfyui', filename_base='all'):
         if not os.path.exists(folder):
