@@ -46,6 +46,8 @@ class SaveImagePlus:
                 with open(file_path, "wb") as f:
                     f.write(image_data)
 
+        return {"ui": {"images": filename}}
+
 
 NODE_CLASS_MAPPINGS = {
     "SaveImagePlus": SaveImagePlus
